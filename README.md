@@ -1,4 +1,4 @@
-**Implementation and documnets**
+## Implementation and documnets
 
 Flytopost is web application built on Django framework with python and SQL for backend data structure and ReactJS for frontend component. The REST API is built to be consumed by mobile and web platform. In this repository you find two seprate folder that contains each tier as explaines below.
 

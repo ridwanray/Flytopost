@@ -1,0 +1,4 @@
+vscode/
+myVenv
+.vscode
+*.sqlite3

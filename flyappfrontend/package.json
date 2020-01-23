@@ -1,0 +1,51 @@
+{
+  "name": "flytopost",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Samson",
+  "license": "MIT",
+  "scripts": {
+    "serve": "live-server public/",
+    "build": "webpack",
+    "dev-server": "webpack-dev-server"
+  },
+  "dependencies": {
+    "@date-io/date-fns": "^1.3.8",
+    "@material-ui/core": "^4.2.1",
+    "@material-ui/icons": "^4.2.1",
+    "@material-ui/pickers": "^3.2.0",
+    "babel-cli": "6.24.1",
+    "babel-core": "6.25.0",
+    "babel-loader": "7.1.1",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.24.1",
+    "bootstrap": "^4.3.1",
+    "css-loader": "^3.1.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.12.0",
+    "rc-datepicker": "^5.0.14",
+    "react": "^16.8.0",
+    "react-bootstrap": "^1.0.0-beta.11",
+    "react-datepicker": "^2.8.0",
+    "react-day-picker": "^7.3.1",
+    "react-dom": "16.8.0",
+    "react-icons": "^3.7.0",
+    "react-modal": "^3.9.1",
+    "react-responsive-navbar": "^1.0.11",
+    "react-router-dom": "^5.0.1",
+    "react-select": "^3.0.4",
+    "redux": "^4.0.4",
+    "redux-saga": "^1.1.3",
+    "sass-loader": "6.0.6",
+    "scss-loader": "0.0.1",
+    "style-loader": "0.18.2",
+    "validator": "8.0.0",
+    "webpack": "^4.38.0",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "devDependencies": {
+    "url-loader": "^2.0.1",
+    "webpack-cli": "^3.3.6"
+  }
+}

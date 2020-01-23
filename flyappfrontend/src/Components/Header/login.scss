@@ -1,0 +1,73 @@
+
+.form_field_input {
+  width: 80%;
+  margin-top: 10px;  
+  margin-bottom: 20px; 
+  height: 36px;
+  font-size: 1em;
+  border-radius: 3px;
+  background: white;
+  border-style: groove;
+  
+}
+.form_field_input::placeholder{
+  color: #646F7D;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 10px;
+  text-align: left;
+}
+
+.login_button {
+  background-color: #e42300;
+  color: white;
+  font-variant: small-caps;
+  font-weight: 700;
+  border-radius: 5px;
+  width: 80%;
+  height: 40px;
+  font-size: 20px;
+  opacity: 50%;
+
+}
+
+.form_field_link {
+  color: #30538b;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.form-center{
+  box-sizing: border-box;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+  
+}
+
+
+.form_field_checkbox_label {
+  color: #646F7D;
+  font-size: .9em;
+}
+
+.form_field_checkbox {
+  position: relative;
+  top: 1.5px;
+}
+
+.form_field_termslink {
+  color: #30538b;
+  border-bottom: 1px solid #02776d;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 2px;
+  margin-left: 5px;
+}
+.signupLink{
+  color: #646F7D;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}

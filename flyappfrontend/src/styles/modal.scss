@@ -1,0 +1,32 @@
+.ReactModalPortal > div{
+  opacity: 0;
+  background-color: aquamarine;
+}
+
+.ReactModalPortal .ReactModal__Overlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 100ms ease-in-out;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open{
+  opacity: 10;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-open{
+  opacity: 0;
+  background-color: black;
+}
+
+.modal{
+  background: #ffffff;
+  width: 30rem;
+  height: 35rem;
+  border-radius: 12px;
+  backdrop-filter:2px;
+  border: 0;
+}
+.modal-backdrop{
+  background-color: transparent;
+}

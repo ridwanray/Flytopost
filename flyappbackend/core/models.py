@@ -85,7 +85,7 @@ class Package(models.Model):
         return self.name
 
 class Trip(models.Model):
-    traveler = models.ForeignKey(User, on_delete=models.CASCADE)
+    travelers = models.ForeignKey(User, on_delete=models.CASCADE)
     location = models.CharField(max_length=254)
     destination = models.CharField(max_length=254)
     departure_date = models.DateTimeField(datetime)

@@ -2,3 +2,5 @@ vscode/
 myVenv
 .vscode
 *.sqlite3
+__pycache__
+*migration

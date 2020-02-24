@@ -38,32 +38,14 @@ class Item(models.Model):
     def __str__(self):
         return self.item_type
 
-class Status(models.Model):
-    AT = 'AT'
-    DP = 'DP'
-    OTW = 'OTW'
-    AD = 'AD'
-    DV = 'DV'
-    STAT_TYPE = (
-        (AT, 'Active'),
-        (DP, 'Dispatched'),
-        (OTW, 'On The Way'),
-        (AD, 'Arrived Destination'),
-        (DV, 'Delivered')
-        )
-    status_type = models.CharField(choices=STAT_TYPE, max_length=254)
-    
-    def __str__(self):
-        return self.status_type
-
 class User(models.Model):
     first_name = models.CharField(max_length=254)
     last_name = models.CharField(max_length=254)
-    picture = models.ImageField(blank=True,upload_to='user_images', default='')
+    picture = models.ImageField(blank=True, upload_to='user_images', default='')
     address = models.CharField(max_length=254)
     email = models.EmailField(max_length=254, default='')
-    phone = models.CharField(max_length=100, blank=True, default='')
-    document = models.ManyToManyField(Document)
+    phone = models.CharField(max_length=100, default='')
+    document = models.ManyToManyField(Document, blank=True)
     active = models.BooleanField(default=False)
     created_on = models.DateTimeField(default=datetime.today)
 
@@ -76,16 +58,16 @@ class Package(models.Model):
     package_type = models.ManyToManyField(Item)
     weight = models.CharField(max_length=254)
     created_on = models.DateTimeField(default=datetime.today)
-    delivered_on = models.DateTimeField(default=datetime.today)
+    delivered_on = models.DateTimeField(datetime, default=datetime.today, blank=True)
     reciever_name = models.CharField(max_length=254)
     reciever_address = models.CharField(max_length=254)
-    package_status = models.ManyToManyField(Status)
+    package_status = models.CharField(max_length=254, default='', blank=True)
 
     def __str__(self):
         return self.name
 
 class Trip(models.Model):
-    travelers = models.ForeignKey(User, on_delete=models.CASCADE)
+    traveler = models.ForeignKey(User, on_delete=models.CASCADE)
     location = models.CharField(max_length=254)
     destination = models.CharField(max_length=254)
     departure_date = models.DateTimeField(datetime)
@@ -93,7 +75,7 @@ class Trip(models.Model):
     available_space = models.FloatField(default=0.00)
     delivery_cost = models.FloatField(default=0.00)
     number_of_packages = models.IntegerField()
+    number_of_luggage = models.IntegerField()
 
     def __str__(self):
-        return self.destination
-
+        return self.location

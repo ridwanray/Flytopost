@@ -5,7 +5,7 @@ import Body from '../Body/Body';
 import Navigation from './../Header/Navigation';
 import Footer from '../Footer/Footer';
 import '../../styles/style.scss';
-import '../../styles/modal.scss';
+import '../../styles/modal/_modal.scss';
 import '../../Images/takeoff.png';
 import Trips from '../Body/trips';
 

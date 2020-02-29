@@ -1,0 +1,85 @@
+.search_box{
+    margin-top: 10px;
+    position: relative;
+    width: 100%;
+    height: 800px;
+    text-align: center;
+    align-content:horizontal;
+    background-image: url("../Images/beach.png");
+    opacity: 10em;
+}
+
+.input_bar_location{
+    height: 50px;
+    width: 32rem;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 16pt;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border: 0px;
+}
+.input_bar_date{
+    height: 50px;
+    width: 32rem;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 16pt;
+    border: 0.5px;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+}
+.searchBtn{
+    height:52px;
+    background: #e42300; 
+    width:12rem;
+    color: white;
+    border-color: #e42300; 
+    font-family: Georgia;
+    font-variant: small-caps;
+    font-size: 18pt;
+    border-radius: 5px;
+    border: 0px;
+    
+}
+
+.searchbox_title{
+    color:white;
+    margin: 34px;
+    font-size: 62px;
+    line-height: 62px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    text-align: center;
+    font-family: Georgia; 
+    
+}
+
+.actionTitle {
+    color:white;
+    margin: 34px;
+    text-shadow:#e42300;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    text-align: center;
+    font-family: Georgia;
+
+}
+
+.searchbox_title{
+    font-style: bold;
+    text-decoration-style: solid;
+    color:white;
+}
+
+.searchForm{
+    display: inline;
+    align-items: baseline;
+}
+  
+.search_content {
+    margin-top: 40px;
+    
+}

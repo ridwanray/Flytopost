@@ -1,52 +1,58 @@
 .search_box{
-    margin-top: 10px;
     position: relative;
     width: 100%;
-    height: 800px;
+    height: 600px;
     text-align: center;
-    align-content:horizontal;
-    background-image: url("../Images/beach.png");
+    align-content:center;
+    //background-image: url("../Images/beach.png");
     opacity: 10em;
 }
 
 .input_bar_location{
-    height: 50px;
-    width: 32rem;
+    height: 64px;
+    width: 50rem;
     font-variant: small-caps;
     text-align: center;
-    font-size: 16pt;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-    border: 0px;
-}
-.input_bar_date{
-    height: 50px;
-    width: 32rem;
-    font-variant: small-caps;
-    text-align: center;
-    font-size: 16pt;
-    border: 0.5px;
-    margin-left: 0.1em;
-    margin-right: 0.1em;
-}
-.searchBtn{
-    height:52px;
-    background: #e42300; 
-    width:12rem;
-    color: white;
-    border-color: #e42300; 
-    font-family: Georgia;
-    font-variant: small-caps;
     font-size: 18pt;
-    border-radius: 5px;
-    border: 0px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border: 0.5px solid;
+    
     
 }
 
+.input_bar_date{
+    height: 64px;
+    width: 50rem;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 18pt;
+    border: 0.5px;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    border: 0.5px solid;
+    border-color: $raisin-black;
+    
+}
+
+.searchBtn{
+    height:65px;
+    background: $sweet-red; 
+    width:16rem;
+    color: white;
+    text-align: center;
+    font-family: Georgia;
+    font-variant: small-caps;
+    font-size: 18pt;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border: 0.5px;
+}
+
 .searchbox_title{
-    color:white;
+    color: $theme-blue;
     margin: 34px;
-    font-size: 62px;
+    font-size: 32px;
     line-height: 62px;
     font-weight: 700;
     letter-spacing: -0.01em;
@@ -58,20 +64,13 @@
 .actionTitle {
     color:white;
     margin: 34px;
-    text-shadow:#e42300;
-    font-size: 24px;
+    font-size: 10rem;
     line-height: 32px;
     font-weight: 600;
     letter-spacing: -0.01em;
     text-align: center;
     font-family: Georgia;
 
-}
-
-.searchbox_title{
-    font-style: bold;
-    text-decoration-style: solid;
-    color:white;
 }
 
 .searchForm{
@@ -83,3 +82,34 @@
     margin-top: 40px;
     
 }
+
+@media only screen and (max-width: 600px){
+    
+    .input_bar_date{
+        
+        border-bottom-left-radius: 50px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 50px;
+        margin-bottom: 10px;
+       
+    }
+
+    .input_bar_location{
+        border-bottom-left-radius: 50px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 50px;
+        margin-bottom: 10px;
+    }
+
+    .searchBtn{
+        border-bottom-left-radius: 50px;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 50px;
+        border: 0.5px;
+    }
+
+}
+

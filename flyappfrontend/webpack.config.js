@@ -27,10 +27,10 @@ module.exports = {
             test: /\.(jpg|png|gif)$/i,
                 loader: 'url-loader'
         },
-        // {
-        //     test: /\.css$/i,
-        //     use: ['style-loader', 'css-loader'],
-        // },
+        {
+            test: /\.css$/i,
+            use: ['style-loader', 'css-loader'],
+        },
     
     ]
     },

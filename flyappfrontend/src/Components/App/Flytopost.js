@@ -2,15 +2,15 @@ import React from 'react';
 
 import Searchbox from '../Action/Searchbox';
 import Body from '../Body/Body';
-import Navigation from './../Header/Navigation';
+import Menu from './../Header/Menu';
 import Footer from '../Footer/Footer';
+import Trips from '../Body/trips';
 import '../../styles/style.scss';
 import '../../styles/modal/_modal.scss';
 import '../../Images/takeoff.png';
-import Trips from '../Body/trips';
+
 
 const Flytopost = () => {
-    // contacts = []
 
     // componentDidMount=()=> {
     //     fetch('http://flytopost/frontend/users')
@@ -24,7 +24,7 @@ const Flytopost = () => {
     return (
 
         <div>
-            <Navigation />
+            <Menu />
             <Searchbox />
             <Body />
             <Trips/>

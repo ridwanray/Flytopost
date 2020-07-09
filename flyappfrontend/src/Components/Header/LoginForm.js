@@ -18,15 +18,15 @@ const LoginForm = (props) =>{
 //     }
     return (
       
-        <div className="form-center">
+        <div class="form-center">
        
-            <form className="form_field">
+            <form class="form_field">
             <h3 className="signupLink">Login to Flytopost</h3>
-              <input type="email" id="email" className="form_field_input" placeholder="Enter your email" name="email" />
-              <input type="password" id="password" className="form_field_input" placeholder="Enter your password" name="password"  />
-              <button className="login_button" type="button">login</button>
-              <h3 className="signupLink">Don't have account?</h3>
-              <a onClick={<SignupForm></SignupForm>} className="signupLink">Sign up</a>
+              <input type="email" id="email" class="form_field_input" placeholder="Enter your email" name="email" />
+              <input type="password" id="password" class="form_field_input" placeholder="Enter your password" name="password"  />
+              <button class="login_button" type="button">login</button>
+              <h3 class="signupLink">Don't have account?</h3>
+              <a onClick={<SignupForm></SignupForm>} class="signupLink">Sign up</a>
               
             </form>
           </div>

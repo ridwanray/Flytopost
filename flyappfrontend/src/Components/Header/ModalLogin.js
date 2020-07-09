@@ -5,7 +5,7 @@ import LoginForm from './LoginForm';
 import SignupForm from './SignupForm';
 
 //import './modal.scss';
-import './login.scss';
+import '../../styles/base/_login.scss';
 
 
 
@@ -19,7 +19,7 @@ const ModalLogin = (props) =>{
         onRequestClose={props.closeModal}
         contentLabel = "Modal-Login"
         closeTimeoutMS = {50}
-        className="modal"
+        class="modal"
         ariaHideApp={false}
         >
         {props.showModal && <LoginForm></LoginForm>}

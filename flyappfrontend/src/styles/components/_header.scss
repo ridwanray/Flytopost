@@ -1,55 +1,32 @@
 
-.toolbar{
-    position:relative;
-    top: 0;
-    left:0;
-    width: 100%;
-    background:  white;
-    height: 100px;
+.navbar{
+    padding:1.6rem 0;
+    background: transparent;
 }
-.toolbar_navigation{
-   display: flex;
-   align-items: center;
-   height: 100%;
-   padding: 0 1rem;
-}
+
 .spacer{
-    flex: 1;
+    flex: 60%;
 }
-.toolbar_logo a {
-    color:#e42300;
-    text-decoration: none;
-    font-size: 2rem;
-    text-shadow: #30538b;
-    text-decoration: #30538b;
-}
-.toolbar_navigation_items ul {
-    list-style: none;
+.navbar-brand{
+    font-size:2.9rem;
     margin:0;
-    padding:0;
-    display: flex;
+    padding-left: 20px;
+    color: $sweet-red;
 }
 
-.toolbar_navigation_items li {
-    padding: 0 0.5rem;
-}
-.toolbar_navigation_items a {
-    color: #e42300;
-    text-decoration: none;
-    font-size: 1.1rem;
+.navbar-custom{
+    background: $snow-white;
+    padding:1.6rem 0;
 }
 
-.toolbar_navigation_items a:hover,
-.toolbar_navigation_items a:active{
-    color: #30538b;    
+.navbar-expand-md{
+    background: transparent;
 }
 
-.topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+.nav-link{
+    color: $raisin-black;
+}
+
+  .navbar span.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }

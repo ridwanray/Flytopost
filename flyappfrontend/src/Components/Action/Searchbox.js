@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import DatePicker from 'react-datepicker'
 import "react-datepicker/dist/react-datepicker.css";
+import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 import Button from 'react-bootstrap'
 
 const Searchbox = () => {
@@ -24,11 +25,11 @@ const Searchbox = () => {
     return (
         <div className="search_box">
         
-        <h1 className="searchbox_title">Post Your Next Trip And Get Paid</h1>
+        <h1 className="searchbox_title">POST OR TRAVEL</h1>
             <md-card-container className="search_content" maxWidth="md">
                 <form className="searchForm">
-                <input className="input_bar_location" type="text" autoComplete="off" placeholder="location" />
-                <DatePicker className="input_bar_date" dateFormat="dd/MM/yyyy" placeholderText="depature" type="text" onChange={handleDayChange} selected={selectedDay} ></DatePicker>
+                <input className="input_bar_location" type="text" autoComplete="on" placeholder="destination" />
+                <DatePicker className="input_bar_date" dateFormat="dd/MM/yyyy" placeholderText="depature date" type="date" onChange={handleDayChange} selected={selectedDay} ></DatePicker>
                 <button className="searchBtn" type="button" >search </button>
                 </form>  
             </md-card-container>

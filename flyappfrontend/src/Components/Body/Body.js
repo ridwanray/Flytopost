@@ -13,14 +13,13 @@ const check = () =>{
     document.getElementsByClassName(btn).style.color= green;
 }
 
-
     return (
     
     <Container className="body" maxWidth="xl">
 
-        <div class="row">
-        <div class="column">
-        <Card class="cards">
+        <div className="row">
+        <div className="column">
+        <Card className="cards">
                 <Card.Img style={{width:'100%'}} variant="top" src={image} alt="Card Image" />
                 <Card.Body>
                     <Card.Title>Samson</Card.Title>
@@ -61,8 +60,8 @@ const check = () =>{
         </Card>
         </div>
 
-        <div class="column">
-        <Card class="cards">
+        <div className="column">
+        <Card className="cards">
         <Card.Img style={{width:'100%'}} variant="top" src={image} alt="Card Image" />
                 <Card.Body>
                     <Card.Title>Samson</Card.Title>

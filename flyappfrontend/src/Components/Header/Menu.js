@@ -26,31 +26,7 @@ const openLogin = ()=> {
 
 return(
   
-//   <nav className="navbar ">
-//  <a className="navbar-brand" href="#">FLYTOPOST</a>
-//   <button className="navbar-toggler" data-target="#collapseNavbar">
-//     <span className="navbar-toggler-icon"></span>
-//   </button>
 
-//   <div className="spacer"></div>
-//   <div className="collapse navbar-collapse" id="collapseNavbar">
-//     <ul className="navbar nav">
-//       <li className="nav-item">
-//         <a className="nav-link" href="#">TRAVEL</a>
-//       </li>
-//       <li className="nav-item">
-//         <a className="nav-link" href="#">POST</a>
-//       </li>
-//       <li className="nav-item">
-//         <a className="nav-link" href="#">HOW IT WORKS</a>
-//       </li>    
-//       <li className="nav-item">
-//         <a className="nav-link" href="#" onClick={openModal}>LOGIN</a>
-//         <ModalLogin showModal = {showModal} closeModal={closeModal}/>
-//       </li>
-//     </ul>
-//   </div>
-// </nav>
 
 <nav className="navbar navbar-expand-md navbar-custom">
 

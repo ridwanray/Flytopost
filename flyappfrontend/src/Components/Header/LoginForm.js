@@ -26,7 +26,7 @@ const LoginForm = (props) =>{
               <input type="password" id="password" class="form_field_input" placeholder="Enter your password" name="password"  />
               <button class="login_button" type="button">login</button>
               <h3 class="signupLink">Don't have account?</h3>
-              <a onClick={<SignupForm></SignupForm>} class="signupLink">Sign up</a>
+              <a href="#" onClick={<SignupForm></SignupForm>} class="signupLink">Sign up</a>
               
             </form>
           </div>

@@ -17,7 +17,7 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
     border-radius: 10px;
     text-align: center;
-    border-color: #30538b;
+
   }
 
   .column {
@@ -33,4 +33,15 @@
     content: "";
     display: table;
     clear: both;
+}
+
+@media only screen and (max-width: 800px) {
+    .body{
+        align-items: center;
+    }
+
+    .card{
+        width: 100%;
+    }
+    
 }

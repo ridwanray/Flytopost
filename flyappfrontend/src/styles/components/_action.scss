@@ -16,9 +16,9 @@
     font-size: 18pt;
     border-bottom-left-radius: 50px;
     border-top-left-radius: 50px;
-    border: 0.5px solid;
-    
-    
+    border: 0.3px;
+    border-color: grey;
+    box-shadow: 1px 2px 3px 1px grey;
 }
 
 .input_bar_date{
@@ -30,8 +30,9 @@
     border: 0.5px;
     margin-left: 0.1em;
     margin-right: 0.1em;
-    border: 0.5px solid;
-    border-color: $raisin-black;
+    border: 0.3px;
+    border-color: grey;
+    box-shadow: 1px 2px 3px 1px grey;
     
 }
 
@@ -46,7 +47,16 @@
     font-size: 18pt;
     border-bottom-right-radius: 50px;
     border-top-right-radius: 50px;
+    //border: 0.5px solid;
+    background: $sweet-red;
     border: 0.5px;
+    box-shadow: 0px 1px 3px 1px grey;
+    
+}
+
+.fa{
+    padding-right: 10px;
+    font-size: 2rem;
 }
 
 .searchbox_title{
@@ -61,13 +71,14 @@
     
 }
 
+
 .actionTitle {
     color:white;
     margin: 34px;
     font-size: 10rem;
     line-height: 32px;
     font-weight: 600;
-    letter-spacing: -0.01em;
+    letter-spacing: 0.1em;
     text-align: center;
     font-family: Georgia;
 
@@ -83,33 +94,62 @@
     
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 800px){
     
     .input_bar_date{
-        
+        width: 32rem;
+        height: 48px;
+        font-size: 12px;
+        font-weight: 20;
         border-bottom-left-radius: 50px;
         border-top-left-radius: 50px;
         border-bottom-right-radius: 50px;
         border-top-right-radius: 50px;
         margin-bottom: 10px;
+        
        
     }
 
     .input_bar_location{
+        width: 32rem;
+        height: 48px;
+        font-size: 12px;
+        font-weight: 20;
+        text-emphasis-color: black;
         border-bottom-left-radius: 50px;
         border-top-left-radius: 50px;
         border-bottom-right-radius: 50px;
         border-top-right-radius: 50px;
         margin-bottom: 10px;
+        
     }
 
     .searchBtn{
+        width: 12rem;
+        height: 48px;
+        font-size: 12px;
+        font-weight: 20;
         border-bottom-left-radius: 50px;
         border-top-left-radius: 50px;
         border-bottom-right-radius: 50px;
         border-top-right-radius: 50px;
-        border: 0.5px;
+        
+    }
+
+    .searchbox_title{
+        color: $theme-blue;
+        margin: 24px;
+        font-size: 16px;
+        font-weight: 50;
+        letter-spacing: -0.01em;
+        text-align: center;
+        font-family: Georgia; 
+        
+    }
+
+    .fa{
+        padding-right: 5px;
+        size: 5px;
     }
 
 }
-

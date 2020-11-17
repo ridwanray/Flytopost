@@ -13,8 +13,6 @@ class Document(models.Model):
         (OT, 'Others')
     )
 
-    doc_type = models.CharField(choices=DOC_TYPE, max_length=100)
-    doc_number = models.CharField(max_length=100)
     def __str__(self):
         return self.doc_type
 

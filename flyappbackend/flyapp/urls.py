@@ -2,7 +2,7 @@
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from core.views import UserViewSet, TripViewSet, PackageViewSet
+from ..core.views import UserViewSet, TripViewSet, PackageViewSet, DocumentViewSet
 
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)

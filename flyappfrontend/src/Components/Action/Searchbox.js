@@ -26,11 +26,14 @@ const Searchbox = () => {
         <div className="search_box">
          <h1 className="searchbox_title">POST OR TRAVEL</h1> 
             <md-card-container className="search_content" maxWidth="md">
-                <form className="searchForm">
+            <div className="action">
+            <form className="searchForm">
                 <input className="input_bar_location" type="text" autoComplete="on" placeholder="where are you sending to" />
                 <DatePicker className="input_bar_date" dateFormat="dd/MM/yyyy" placeholderText="depature date" type="date" onChange={handleDayChange} selected={selectedDay} ></DatePicker>
                 <button className="searchBtn" type="button" ><i className="fa fa-search"></i>search </button>
                 </form>  
+            </div>
+                
             </md-card-container>
             
         </div>

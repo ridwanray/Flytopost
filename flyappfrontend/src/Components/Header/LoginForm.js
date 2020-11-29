@@ -2,20 +2,20 @@ import React from 'react';
 //import { Link } from 'react-router-dom';
 import {useState} from 'react'
 import SignupForm from './SignupForm'
-import ModalLogin from './ModalLogin'
+import UserModal from '../Modals/UserModal'
 
-const LoginForm = (props) =>{
-//   const [showModal, setShowModal] = useState(false);
+const LoginForm = (props) => {
+  const [showModal, setShowModal] = useState(false);
 
-//   const openModal = () =>{
-//         setShowModal(true);
-//         console.log("openModal");
-//     }
+  const openModal = () =>{
+        setShowModal(true);
+        console.log("openModal");
+    }
     
-//  const closeModal = () =>{
-//         setShowModal(false);
-//         console.log('closeModal');
-//     }
+ const closeModal = () =>{
+        setShowModal(false);
+        console.log('closeModal');
+    }
     return (
       
         <div class="form-center">

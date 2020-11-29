@@ -4,6 +4,19 @@
     display: block;
     font-family: Arial, Helvetica, sans-serif;
 }
+.trips{
+   width: 100%;
+    margin-top: 5rem;
+   
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.tripsearch{
+    padding: 16px;
+   margin: 0 5px;
+}
 .body .usercards:first-child{
     margin-left: 0; 
 }
@@ -14,7 +27,7 @@
 .card {
     padding: 16px;
     background-color: #ffffff;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
     border-radius: 10px;
     text-align: center;
 
@@ -24,20 +37,28 @@
     float: left;
     width: 25%;
     padding: 0 5px;
+    margin-top: 10px
 }
 
 .row{
     margin: 0 -5px;
+    display: inline;
+    padding: 0 5px;
+    
 }
-.row::after{
-    content: "";
-    display: table;
-    clear: both;
-}
+// .row::after{
+//     content: "";
+//     display: table;
+//     clear: both;
+// }
+
 
 @media only screen and (max-width: 800px) {
     .body{
         align-items: center;
+    }
+    .trips{
+        align-content: center;
     }
 
     .card{

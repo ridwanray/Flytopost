@@ -1,11 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
-import ModalLogin from './ModalLogin'
-import { Navbar } from 'react-bootstrap'
-import ResponsiveMenu from 'react-responsive-navbar'
+import UserModal from '../Modals/UserModal';
 
 
-const Navigation = (props) => { 
+const Menu = (props) => { 
 const [showModal, setShowModal] = useState(false);
 
 const openModal = () =>{
@@ -14,14 +12,6 @@ const openModal = () =>{
     
 const closeModal = () =>{
   setShowModal(false);
-  }
-const openLogin = ()=> {
-  //let x = document.getElementById("nav_items");
-    if (!setShowModal) {
-      setShowModal(true);
-    } else {
-      setShowModal(false);
-    }
   }
 
 return(
@@ -51,7 +41,7 @@ return(
       </li> 
       <li className="nav-item">
       <a className="nav-link" href="#" onClick={openModal}>LOGIN</a>
-              <ModalLogin showModal = {showModal} closeModal={closeModal}/>
+              <UserModal showModal = {showModal} closeModal={closeModal}/>
       </li> 
     </ul>
   </div> 
@@ -59,4 +49,4 @@ return(
 );
 }
 
-export default Navigation;
+export default Menu;

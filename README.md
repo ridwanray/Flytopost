@@ -23,4 +23,4 @@ The backend folder contains the API and database build and architectures.
 
 1. User and other model APIs are ready to be called from any API application such Postman.
 2. All models REST API can be tested on postman. 
-3. Currently finishing up the basics to launch on Cloaud for UI integerations. 
+3. Currently finishing up the basics to launch on Cloud for UI integerations. 

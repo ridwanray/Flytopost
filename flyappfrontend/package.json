@@ -25,6 +25,8 @@
     "cors": "^2.8.5",
     "css-loader": "^3.6.0",
     "live-server": "^1.2.1",
+    "module": "^1.2.5",
+    "node": "^15.4.0",
     "node-sass": "^4.14.1",
     "rc-datepicker": "^5.0.16",
     "react": "^16.14.0",
@@ -44,7 +46,8 @@
     "style-loader": "0.18.2",
     "validator": "8.0.0",
     "webpack": "^4.44.2",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "yarn": "^1.22.10"
   },
   "devDependencies": {
     "jest": "20.0.4",

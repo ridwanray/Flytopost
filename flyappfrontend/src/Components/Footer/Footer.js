@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
-      <footer role="contentinfo" className="footer">
+    
+<footer  color ="red" role="contentinfo" className="footer">
         <div classname="footer_section">
           <div class="row">
             <section className="section">
@@ -89,7 +89,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-    </div>
+  
   );
 };
 export default Footer;

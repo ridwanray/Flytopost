@@ -1,18 +1,25 @@
 .footer {
   display: block;
-  position: absolute;
+  position:sticky;
   height: 200px;
   width: 100%;
-  margin-top: 100px;
   text-align: center;
-  background: transparent;
+  background-color:  $sweet-red;
+  
 }
 
 .section {
   float: left;
   width: 25%;
-  height: 400px;
+  height: 100%;
+  color: black;
+  margin-top: 30px;
+  
 }
 .footer_list {
   list-style-type: none;
+  
+}
+.section a {
+  color: white;
 }

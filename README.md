@@ -11,7 +11,7 @@ The frontend folder contains the client side logic and UI components built on Re
 Please use "npm run flytopost" to launch the app.
 
 1. Menu, action, contents and footer is the current stage of the structure.
-2. Action componenet is updated with date and searh capapibilies.
+2. Action componenet is updated with date and search functionality.
 3. Body card component is looking good and responsive. 
 
 
@@ -19,7 +19,7 @@ Please use "npm run flytopost" to launch the app.
 
 ## Back End
 
-The backend folder contains the API and database build and architectures.
+The backend folder contains the API and database architectures.
 
 1. User and other model APIs are ready to be called from any API application such Postman.
 2. All models REST API can be tested on postman. 

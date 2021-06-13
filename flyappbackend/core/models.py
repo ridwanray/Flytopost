@@ -1,79 +1,48 @@
+# Create your models here.
 from django.db import models
-from datetime import datetime,date
-from django.utils import timezone
+from django.db.models.deletion import CASCADE
+from django.http import JsonResponse
 
-# App models here.
-class Document(models.Model):
-    PP = 'PP'
-    DL = 'DL'
-    OT = 'OT'
-    DOC_TYPE = (
-        (PP, 'Passport'),
-        (DL, 'Driver license'),
-        (OT, 'Others')
-    )
+class Address(models.Model):
+    name = models.CharField(max_length=30)
+    address = models.CharField(max_length=50)
+    city = models.CharField(max_length=60, default="")
+    state = models.CharField(max_length=30, default="")
+    zipcode = models.CharField(max_length=5, default="")
+    country = models.CharField(max_length=50)
 
-    def __str__(self):
-        return self.doc_type
-
-class Item(models.Model):
-    MAIL = 'MAIL'
-    ELECTRONICS = 'ELECTRONICS'
-    COSMETICS = 'COSMETICS'
-    KITCHEN_AID = 'KITCHEN_AID'
-    SHOES = 'SHOES'
-    APPAREL = 'APPAREL'
-    PACK_TYPE = (
-        (MAIL,'Mail'),
-        (ELECTRONICS, 'Electronic'),
-        (COSMETICS, 'Cosmetic'),
-        (KITCHEN_AID, 'Kitchen Aid'),
-        (SHOES,'Shoe'),
-        (APPAREL, 'Apparel')
-    )
-
-    item_type = models.CharField(choices=PACK_TYPE, max_length=254)
-    def __str__(self):
-        return self.item_type
+class Rewards(models.Model):
+    name  = models.CharField(max_length=30)
+    award_type = models.CharField(max_length=30)
 
 class User(models.Model):
-    first_name = models.CharField(max_length=254)
-    last_name = models.CharField(max_length=254)
-    picture = models.ImageField(blank=True, upload_to='user_images', default='')
-    address = models.CharField(max_length=254)
-    email = models.EmailField(max_length=254, default='')
-    phone = models.CharField(max_length=100, default='')
-    document = models.ManyToManyField(Document, blank=True)
-    active = models.BooleanField(default=False)
-    created_on = models.DateTimeField(default=datetime.today)
+    user_first_name = models.CharField(max_length=30)
+    user_last_name = models.CharField(max_length=30)
+    user_email = models.EmailField()
+    user_phone = models.CharField(max_length=30)
 
-    def __str__(self):
-        return self.first_name 
+class UserProfile(models.Model):
+    user = models.OneToOneField(User, on_delete=CASCADE)
+    address = models.ManyToManyField(Address)
+    user_bio = models.TextField(60)
+    earnings = models.IntegerField(default= 0.00)
+    rewards = models.ManyToManyField(Rewards)
+    rating = models.IntegerField(default= 0)
+    image = models.ImageField(default='favicon.jpg', upload_to='profile_pics')
 
 class Package(models.Model):
-    name = models.CharField(max_length=254)
-    package_owner = models.ForeignKey(User, on_delete=models.CASCADE)
-    package_type = models.ManyToManyField(Item)
-    weight = models.CharField(max_length=254)
-    created_on = models.DateTimeField(default=datetime.today)
-    delivered_on = models.DateTimeField(datetime, default=datetime.today, blank=True)
-    reciever_name = models.CharField(max_length=254)
-    reciever_address = models.CharField(max_length=254)
-    package_status = models.CharField(max_length=254, default='', blank=True)
+    package_name = models.CharField(max_length= 255)
+    package_owner = models.OneToOneField(User, on_delete= CASCADE)
+    package_image = models.ImageField(default='item_avatar.jpg', upload_to = 'package_pics')
+    package_location = models.ManyToManyField(Address, related_name='package_location')
+    package_destination = models.ManyToManyField(Address, related_name='package_destination')
+    package_worth = models.IntegerField(default= 0)
 
-    def __str__(self):
-        return self.name
-
-class Trip(models.Model):
-    traveler = models.ForeignKey(User, on_delete=models.CASCADE)
-    location = models.CharField(max_length=254)
-    destination = models.CharField(max_length=254)
-    departure_date = models.DateTimeField(datetime)
-    arrival_date  = models.DateTimeField(datetime)
-    available_space = models.FloatField(default=0.00)
-    delivery_cost = models.FloatField(default=0.00)
-    number_of_packages = models.IntegerField()
-    number_of_luggage = models.IntegerField()
-
-    def __str__(self):
-        return self.location
+class PackageDetails(models.Model):
+    package_weight = models.CharField(max_length= 30)
+    package_brand = models.CharField(max_length=30)
+    package_SKU = models.CharField(max_length=60)
+    package_width = models.CharField(max_length= 255)
+    package_width = models.CharField(max_length= 255)
+    package_width = models.CharField(max_length= 255)
+    package_color = models.CharField(max_length=30)
